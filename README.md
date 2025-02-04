@@ -1,40 +1,55 @@
-# ReScript / Vite Starter Template
+# Project Allocation
 
-- [Installation](../../README.md)
+## Overview
 
-This is a Vite-based template with following setup:
+This project addresses the stable matching problem, specifically in the context of allocating students to projects based on their preferences. The goal is to maximize overall utility by ensuring that students are matched to projects they prefer, while maintaining stability in the allocation.
 
-- [ReScript](https://rescript-lang.org) 11.0 with @rescript/react, [Core](https://github.com/rescript-association/rescript-core) and JSX v4
-- ES6 modules (ReScript code compiled to `.res.mjs` files)
-- Vite 4 with React Plugin (Fast Refresh)
-- Tailwind 3
+## Stable Matching Problem
 
-## Development
+The stable matching problem involves finding a stable match between two sets of elements given a set of preferences for each element. A match is considered stable if there are no two elements that would prefer each other over their current matches.
 
-Run ReScript in dev mode:
+In this project, we focus on matching students to projects. Each student ranks their preferred projects, and the algorithm aims to allocate projects to students in a way that maximizes overall satisfaction and ensures stability.
 
-```sh
-npm run res:dev
-```
+## Solution Approach
 
-In another tab, run the Vite dev server:
+1. **Preference Collection**: Students submit their ranked preferences for available projects.
+2. **Algorithm Execution**: We implement a stable matching algorithm (such as the Gale-Shapley algorithm) to process the preferences and generate a stable match.
+3. **Utility Maximization**: The algorithm ensures that the allocation maximizes the overall utility by considering the preferences of all students.
 
-```sh
-npm run dev
-```
+## Getting Started
 
-## Tips
+To get started with this project, follow these steps:
 
-### Fast Refresh & ReScript
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/project-allocation.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd project-allocation
+    ```
+3. Install the necessary dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the ReScript development server:
+    ```bash
+    npm run res:dev
+    ```
 
-Make sure to create interface files (`.resi`) for each `*.res` file.
+5. Start the Vite development server:
+    ```bash
+    npm run dev
+    ```
 
-Fast Refresh requires you to **only export React components**, and it's easy to unintenionally export other values that will disable Fast Refresh (you will see a message in the browser console whenever this happens).
+## Contributing
 
-### Why are the generated `.res.mjs` files tracked in git?
+We welcome contributions to improve the project. Please fork the repository and submit a pull request with your changes.
 
-In ReScript, it's a good habit to keep track of the actual JS output the compiler emits. It allows quick sanity checking if we made any changes that actually have an impact on the resulting JS code (especially when doing major compiler upgrades, it's a good way to verify if production code will behave the same way as before the upgrade).
+## License
 
-This will also make it easier for your Non-ReScript coworkers to read and understand the changes in Github PRs, and call you out when you are writing inefficient code.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-If you want to opt-out, feel free to remove all compiled `.res.mjs` files within the `src` directory and add `src/**/*.res.mjs` in your `.gitignore`.
+## Contact
+
+For any questions or feedback, please contact [vsrivatsa25@gmail.com](mailto:vsrivatsa25@gmail.com).
