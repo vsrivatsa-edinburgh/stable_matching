@@ -1,5 +1,5 @@
 {
-  "name": "project-allocation",
+  "name": "stable-matching",
   "sources": [
     {
       "dir": "src",

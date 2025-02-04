@@ -1,7 +1,11 @@
-# Project Allocation
+# Stable Matching
+
+## Overview
+# Stable Matching
 
 ## Overview
 
+This project addresses the stable matching problem, specifically in the context of allocating students to projects based on their preferences. The goal is to maximize overall utility by ensuring that students are matched to projects they prefer, while maintaining stability in the allocation.
 This project addresses the stable matching problem, specifically in the context of allocating students to projects based on their preferences. The goal is to maximize overall utility by ensuring that students are matched to projects they prefer, while maintaining stability in the allocation.
 
 ## Stable Matching Problem
@@ -23,11 +27,11 @@ To get started with this project, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/project-allocation.git
+    git clone https://github.com/yourusername/stable-matching.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd project-allocation
+    cd stable-matching
     ```
 3. Install the necessary dependencies:
     ```bash
