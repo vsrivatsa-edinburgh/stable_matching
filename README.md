@@ -8,13 +8,14 @@ This project addresses the stable matching problem, specifically in the context 
 
 The stable matching problem involves finding a stable match between two sets of elements given a set of preferences for each element. A match is considered stable if there are no two elements that would prefer each other over their current matches.
 
-In this project, we focus on matching students to projects. Each student ranks their preferred projects, and the algorithm aims to allocate projects to students in a way that maximizes overall satisfaction and ensures stability.
+In this project, we focus on matching students to projects. Each student ranks their preferred projects, and the algorithm aims to allocate projects to students in a way that maximizes overall satisfaction and ensures stability. Additionally, supervisors can mark students as suitable for specific projects, which is taken into account during the matching process.
 
 ## Solution Approach
 
 1. **Preference Collection**: Students submit their ranked preferences for available projects.
-2. **Algorithm Execution**: We implement a stable matching algorithm (such as the Gale-Shapley algorithm) to process the preferences and generate a stable match.
-3. **Utility Maximization**: The algorithm ensures that the allocation maximizes the overall utility by considering the preferences of all students.
+2. **Supervisor Input**: Supervisors mark students as suitable for specific projects.
+3. **Algorithm Execution**: We implement a stable matching algorithm (such as the Gale-Shapley algorithm) to process the preferences and generate a stable match.
+4. **Utility Maximization**: The algorithm ensures that the allocation maximizes the overall utility by considering the preferences of all students and the suitability markings by supervisors.
 
 ## Getting Started
 
